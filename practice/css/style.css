@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ececec;
+    color: white;
+}
+
+
+img {
+    width: 100%;
+}
+
+.container {
+    margin: 50px auto;
+    padding: 30px;
+    width: 90%;
+    background-color: rgb(57, 88, 57);
+    filter: blur(10);
+    column-count: 3;
+    gap: 0;
+}
+
+.grid {
+    padding: 7px 5px;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+}
+
+.text {
+    padding: 20px;
+}
+
+.grid>* {
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.135);
+}
+
+.pic>*:not(img) {
+    padding: 0 20px;
+}
